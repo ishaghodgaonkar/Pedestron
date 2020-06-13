@@ -66,6 +66,7 @@ class CustomDataset(Dataset):
         self.img_prefix = img_prefix
 
         # load annotations (and proposals)
+        #if (ann_file):
         self.img_infos = self.load_annotations(ann_file)
         if proposal_file is not None:
             self.proposals = self.load_proposals(proposal_file)

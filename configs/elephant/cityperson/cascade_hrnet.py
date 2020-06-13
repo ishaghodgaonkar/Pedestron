@@ -248,8 +248,10 @@ data = dict(
     ),
     test=dict(
         type=dataset_type,
-	ann_file=data_root + 'val_gt_for_mmdetction.json',
-        img_prefix=data_root + '/leftImg8bit_trainvaltest/leftImg8bit/val_all_in_folder/',
+#	ann_file=data_root + 'val_gt_for_mmdetction.json',
+#        img_prefix=data_root + '/leftImg8bit_trainvaltest/leftImg8bit/val_all_in_folder/',
+        ann_file=None,
+        img_prefix='/home/shay/a/ighodgao/COVID-19/Pedestron/images',
         img_scale=(2048, 1024),
         img_norm_cfg=img_norm_cfg,
         size_divisor=32,
